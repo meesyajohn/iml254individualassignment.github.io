@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="family.css">
+    <title>Family</title>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Bubbles&display=swap" rel="stylesheet">
+    <link rel="icon" href="image/icon.jpg" type="image/png">
+
+</head>
+<body>
+    
+    <div class="banner">
+        <img src="image/banner.jpg" alt="Your Photo" style="width: 100px; height: 100px; border-radius: 50%; margin-right: 20px;">
+        <h1>Assalammualaikum and a very good day! Welcome to bushbubbs<3 </h1>
+    </div>
+    <header>
+        <nav class="navbar">
+        <div class="brand-title">
+            <span class="heart-logo">&#10084;</span>bushbubbs
+        </div>
+        <div class="navbar-links">
+                <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Professional</a>
+                    <div class="dropdown">
+                        <a href="educational.html">Education</a>
+                        <a href="experience.html">Experience</a>
+                        <a href="skills.html">Skills</a>
+                        <a href="contact.html">Contact</a>
+                <li><a href="#">About Me</a>
+                    <div class="dropdown">
+                        <a href="interest.html">Interest</a>
+                        <a href="hobby.html">Hobby</a>
+                        <a href="routine.html">My Routine</a>
+                        <a href="goals.html">Goals and Aspirations</a>
+                <li><a href="#">Loved Ones</a>
+                    <div class="dropdown">
+                        <a href="family.html">Family</a>
+                        <a href="friend.html">Friends</a>
+                        <a href="more.html">More of My People</a>
+                <li><a href="form.html">Feedback Form</a></li>
+                </ul>
+            </div>
+        </nav>
+
+    <div class="content">
+        <div class="family-box">
+            <h1>⋆˚♡ Family  𝜗𝜚˚⋆</h1>
+            <p>My family is my world, and I hold each member close to my heart with deep affection and unwavering loyalty. My dad has always been my hero, a beacon of strength and wisdom who has guided me through life's complexities with a steady hand. His dedication to our family and his tireless work ethic have instilled in me the values of perseverance and integrity. His stories and life lessons are treasures that I carry with me, shaping my decisions and inspiring me to strive for greatness. His support is a constant source of encouragement, reminding me that no challenge is insurmountable with his backing.</p>
+            <p>My mom is the heart of our family, her love and care forming the foundation of our home. Her kindness, patience, and nurturing spirit have created a sanctuary where each of us feels valued and loved. She has an incredible ability to make everyone feel special, and her sacrifices for our happiness are immeasurable. Her warmth and wisdom are a comfort to me, guiding me through both joyous and difficult times. Her unwavering belief in my potential motivates me to pursue my dreams with confidence and resilience. Her embrace is a safe haven, a reminder of the unconditional love that binds us.</p>
+            <p>My brother is my best companion, a constant presence who shares in my triumphs and setbacks. Our bond is forged through countless shared experiences, adventures, and late-night talks. He is not only a sibling but also a friend who understands me in ways no one else can. His sense of humor and perspective bring lightness to my days, and his loyalty assures me that I am never alone. Together, we navigate the challenges of life, providing each other with strength and support. Our connection is a source of immense joy and stability, a reminder of the enduring power of family ties.</p>
+            <p>I have two older sister which i called kakak and kakcik. They are my role models especially kakcik (my partner in crime), each of them embodying qualities that I admire and aspire to. Their achievements and resilience inspire me to aim high and persevere through obstacles. They have always been there to offer guidance, support, and a shoulder to lean on. Their experiences and advice are invaluable, helping me navigate my own path with greater clarity and confidence. My little sister, on the other hand, is the joy and light of our family. Her innocence, enthusiasm, and zest for life remind me to cherish the simple moments and approach each day with optimism. Her laughter and curiosity are infectious, bringing a sense of wonder and delight to our lives.</p>
+            <div class="audio-container">
+                <button id="playPauseBtn">Play</button>
+                <div class="progress-bar">
+                    <div class="progress"></div>
+                </div>
+                <span class="current-time">0:00</span> / <span class="duration">0:00</span>
+            </div>
+        </div>
+
+        <div class="heart-frame-container">
+            <div class="heart-frame"><img src="image/family1.jpeg" alt="Family Member"></div>
+            <div class="heart-frame"><img src="image/family2.jpeg" alt="Family Member"></div>
+            <div class="heart-frame"><img src="image/family3.jpeg" alt="Family Member"></div>
+            <div class="heart-frame"><img src="image/family4.jpeg" alt="Family Member"></div>
+            <div class="heart-frame"><img src="image/family5.jpeg" alt="Family Member"></div>
+            <div class="heart-frame"><img src="image/family6.jpeg" alt="Family Member"></div>
+            <div class="heart-frame"><img src="image/family7.jpeg" alt="Family Member"></div>
+            <div class="heart-frame"><img src="image/family8.jpeg" alt="Family Member"></div>
+            <div class="heart-frame"><img src="image/family9.jpeg" alt="Family Member"></div>
+            <div class="heart-frame"><img src="image/family10.jpeg" alt="Family Member"></div>
+            <div class="heart-frame"><img src="image/family11.jpeg" alt="Family Member"></div>
+            <div class="heart-frame"><img src="image/family12.jpeg" alt="Family Member"></div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; All Rights Reserved, 2024, bushbubbs</p>
+    </footer>
+
+    <button id="scrollTopBtn" onclick="scrollToTop()">Scroll to Top</button>
+
+    <div id="glitterContainer"></div>
+
+    <script>
+        function scrollToTop() {
+            document.documentElement.scrollTop = 0;
+        }
+
+        window.onscroll = function() {
+            scrollFunction();
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("scrollTopBtn").style.display = "block";
+            } else {
+                document.getElementById("scrollTopBtn").style.display = "none";
+            }
+        }
+
+        document.addEventListener('mousemove', (e) => {
+            let glitter = document.createElement('div');
+            glitter.classList.add('glitter');
+            document.body.appendChild(glitter);
+
+            glitter.style.left = `${e.pageX}px`;
+            glitter.style.top = `${e.pageY}px`;
+
+            setTimeout(() => {
+                glitter.remove();
+            }, 1000);
+        });
+
+        const audio = new Audio('audio/familysong.mp3');
+        const playPauseBtn = document.getElementById('playPauseBtn');
+        const progressBar = document.querySelector('.progress-bar .progress');
+        const currentTimeElement = document.querySelector('.current-time');
+        const durationElement = document.querySelector('.duration');
+
+        audio.addEventListener('loadedmetadata', () => {
+            durationElement.textContent = formatTime(audio.duration);
+        });
+
+        audio.addEventListener('timeupdate', () => {
+            const progressPercent = (audio.currentTime / audio.duration) * 100;
+            progressBar.style.width = `${progressPercent}%`;
+            currentTimeElement.textContent = formatTime(audio.currentTime);
+        });
+
+        playPauseBtn.addEventListener('click', () => {
+            if (audio.paused) {
+                audio.play();
+                playPauseBtn.textContent = 'Pause';
+            } else {
+                audio.pause();
+                playPauseBtn.textContent = 'Play';
+            }
+        });
+
+        function formatTime(seconds) {
+            const minutes = Math.floor(seconds / 60);
+            const secs = Math.floor(seconds % 60);
+            return `${minutes}:${secs < 10 ? '0' : ''}${secs}`;
+        }
+    </script>
+</body>
+</html>

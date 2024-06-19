@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="hobby.css">
+    <title>Hobby</title>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Bubbles&display=swap" rel="stylesheet">
+    <link rel="icon" href="image/icon.jpg" type="image/png">
+
+</head>
+<body>
+    
+    <div class="banner">
+        <img src="image/banner.jpg" alt="Your Photo" style="width: 100px; height: 100px; border-radius: 50%; margin-right: 20px;">
+        <h1>Assalammualaikum and a very good day! Welcome to bushbubbs<3 </h1>
+    </div>
+    <nav class="navbar">
+        <div class="brand-title">
+            <span class="heart-logo">&#10084;</span>bushbubbs
+        </div>
+       <div class="navbar-links">
+                <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Professional</a>
+                    <div class="dropdown">
+                        <a href="educational.html">Education</a>
+                        <a href="experience.html">Experience</a>
+                        <a href="skills.html">Skills</a>
+                        <a href="contact.html">Contact</a>
+                <li><a href="#">About Me</a>
+                    <div class="dropdown">
+                        <a href="interest.html">Interest</a>
+                        <a href="hobby.html">Hobby</a>
+                        <a href="routine.html">My Routine</a>
+                        <a href="goals.html">Goals and Aspirations</a>
+                <li><a href="#">Loved Ones</a>
+                    <div class="dropdown">
+                        <a href="family.html">Family</a>
+                        <a href="friend.html">Friends</a>
+                        <a href="more.html">More of My People</a>
+                <li><a href="form.html">Feedback Form</a></li>
+                </ul>
+            </div>
+        </nav>
+
+    <div class="content">
+        <div class="column">
+            <h1>⋆ ˚｡౨ৎ ⋆˚🧸ྀི⋆ Hobby </h1>
+            <div class="frame-container">
+                <div class="frame">
+                    <center><img src="image/hobby1.jpeg" alt="Hobby Image 1"></center>
+                    <div class="frame-content">
+                        <p>Shopping is more than just a pastime for me; it's a form of self-expression and a means to indulge in life's little pleasures. Whether it's browsing through trendy boutiques or hunting for bargains in thrift stores, the thrill of discovering something new never fails to excite me. Even if it's something small or inexpensive, the joy it brings is immeasurable.</p>
+<p>Beyond the material aspect, shopping serves as a therapeutic escape from the daily stresses of life. Stepping into a store transports me to a world of possibilities, where the only concern is choosing between different styles and colors. It's a chance to unwind, explore my interests, and treat myself to something special.</p>
+<p>Moreover, shopping is not just about acquiring items; it's a way for me to celebrate my achievements and milestones. Whether it's acing a test, completing a project, or reaching a personal goal, I believe in rewarding myself for my hard work and dedication. Shopping becomes a form of self-care, allowing me to acknowledge my accomplishments and pamper myself in the process.</p>
+                    </div>
+                </div>
+                <div class="frame">
+                    <center><img src="image/hobby2.jpeg" alt="Hobby Image 2"></center>
+                    <div class="frame-content">
+                        <p>Reading holds a special place in my heart, providing an escape into worlds of imagination and adventure. Whether I'm delving into the pages of a gripping novel or immersing myself in the vivid illustrations of manga, the experience is always enriching and fulfilling. Each story I encounter opens up new possibilities, broadens my perspectives, and transports me to realms beyond the confines of reality.</p>
+<p>Beyond mere entertainment, reading serves as a source of solace and tranquility in my life. Amidst the chaos of daily routines, losing myself in a good book offers a moment of respite, allowing me to unwind and recharge. The rhythmic flow of words and the captivating plotlines create a sense of calm and contentment that soothes my soul.</p>
+<p>Moreover, reading is a journey of self-discovery and personal growth. Through the diverse characters and narratives, I gain insights into the complexities of human emotions and the intricacies of life. With each turn of the page, I learn, reflect, and evolve, enriching my understanding of the world and deepening my appreciation for the beauty of storytelling.</p>
+                    </div>
+                </div>
+                <div class="frame">
+                    <center><img src="image/hobby3.jpeg" alt="Hobby Image 3"></center>
+                    <div class="frame-content">
+                        <p>Visiting museums is an enduring passion of mine, a hobby that continually enriches my life with knowledge and wonder. With each excursion to these cultural bastions, I embark on a journey of discovery, eagerly absorbing the fascinating facts and insights they offer. From ancient artifacts to contemporary art installations, every exhibit holds a story waiting to be unveiled, fueling my curiosity and igniting my imagination.</p>
+<p>Immersing myself in the vast array of exhibits, I find myself captivated by the sheer diversity of human history and creativity on display. Whether I'm marveling at the intricacies of ancient civilizations or contemplating the profound messages conveyed through modern artworks, each encounter broadens my understanding of the world and deepens my appreciation for its complexities. The museum becomes a portal through which I traverse time and space, gaining new perspectives and insights with every step.</p>
+<p>Beyond the accumulation of knowledge, visiting museums is a soul-nourishing experience, providing moments of quiet reflection and profound inspiration. Amidst the hushed galleries and reverent atmosphere, I find solace and tranquility, allowing my mind to wander freely and my spirit to be rejuvenated. It's a retreat from the hustle and bustle of daily life, where I can immerse myself in beauty, history, and culture, emerging refreshed and enlightened with each visit.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; All Rights Reserved, 2024, bushbubbs</p>
+    </footer>
+
+    <button id="scrollTopBtn" onclick="scrollToTop()">Scroll to Top</button>
+
+    <div id="glitterContainer"></div>
+
+    <script>
+        function scrollToTop() {
+            document.documentElement.scrollTop = 0;
+        }
+
+        window.onscroll = function() {
+            scrollFunction();
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("scrollTopBtn").style.display = "block";
+            } else {
+                document.getElementById("scrollTopBtn").style.display = "none";
+            }
+        }
+
+        document.addEventListener('mousemove', (e) => {
+            let glitter = document.createElement('div');
+            glitter.classList.add('glitter');
+            document.body.appendChild(glitter);
+
+            glitter.style.left = `${e.pageX}px`;
+            glitter.style.top = `${e.pageY}px`;
+
+            setTimeout(() => {
+                glitter.remove();
+            }, 1000);
+        });
+    </script>
+</body>
+</html>
